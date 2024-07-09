@@ -2,7 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Adjust base font size */
 }
+
 
 header {
     background-color: #333;
@@ -33,4 +35,105 @@ main {
     max-width: 100%;
     height: auto;
     margin: 1em 0;
+}
+
+.yardage-table {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Max width to prevent overflow on smaller screens */
+    margin: 0 auto 1em auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.yardage-table th, .yardage-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.yardage-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.yardage-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.yardage-table tr:hover {
+    background-color: #ddd;
+}
+
+.yardage-table th, .yardage-table td {
+    text-align: center;
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    opacity: 0.7;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #333;
+}
+
+/* Swiper Navigation Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        padding: 10px;
+    }
+
+    .yardage-table {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        padding: 5px;
+    }
+
+    .yardage-table {
+        width: 100%;
+        font-size: 12px;
+    }
 }
