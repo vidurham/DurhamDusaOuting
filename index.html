@@ -36,7 +36,7 @@
                         </tr>
                     </table>
                     <img src="images/hole1.png" alt="Hole 1 layout">
-                    <img src="images/ddw1.JPG" alt="Family at hole 1">
+                    <img src="images/dd4.2.JPG" alt="Family at hole 1">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 2</h2>
@@ -60,7 +60,7 @@
                         </tr>
                     </table>
                     <img src="images/hole2.png" alt="Hole 2 layout">
-                    <img src="images/dd4.2.JPG" alt="Family at hole 2">
+                    <img src="images/dd12.JPG" alt="Family at hole 2">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 3</h2>
@@ -84,7 +84,7 @@
                         </tr>
                     </table>
                     <img src="images/hole3.png" alt="Hole 3 layout">
-                    <img src="images/dd3.JPG" alt="Family at hole 3">
+                    <img src="images/dd6.JPG" alt="Family at hole 3">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 4</h2>
@@ -108,7 +108,7 @@
                         </tr>
                     </table>
                     <img src="images/hole4.png" alt="Hole 4 layout">
-                    <img src="images/dd5.JPG" alt="Family at hole 4">
+                    <img src="images/dd9.JPG" alt="Family at hole 4">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 5</h2>
@@ -132,7 +132,7 @@
                         </tr>
                     </table>
                     <img src="images/hole5.png" alt="Hole 5 layout">
-                    <img src="images/dd6.JPG" alt="Family at hole 5">
+                    <img src="images/dd10.JPG" alt="Family at hole 5">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 6</h2>
@@ -156,7 +156,7 @@
                         </tr>
                     </table>
                     <img src="images/hole6.png" alt="Hole 6 layout">
-                    <img src="images/dd7.JPG" alt="Family at hole 6">
+                    <img src="images/dd3.JPG" alt="Family at hole 6">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 7</h2>
@@ -180,7 +180,7 @@
                         </tr>
                     </table>
                     <img src="images/hole7.png" alt="Hole 7 layout">
-                    <img src="images/dd8.JPG" alt="Family at hole 7">
+                    <img src="images/dd5.JPG" alt="Family at hole 7">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 8</h2>
@@ -204,7 +204,7 @@
                         </tr>
                     </table>
                     <img src="images/hole8.png" alt="Hole 8 layout">
-                    <img src="images/dd9.JPG" alt="Family at hole 8">
+                    <img src="images/dd2.JPG" alt="Family at hole 8">
                 </div>
                 <div class="swiper-slide">
                     <h2>Hole 9</h2>
@@ -241,7 +241,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            loop: true,
+            loop: false, // Disable looping
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -250,6 +250,9 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            slidesPerView: 1, // Show only one slide at a time
+            spaceBetween: 0, // No space between slides
+            initialSlide: 0, // Start from the first slide
         });
     </script>
 </body>
