@@ -123,25 +123,3 @@ main {
 .swiper-button-prev {
     left: 10px;
 }
-
-@media (max-width: 768px) {
-    .swiper-slide {
-        padding: 10px;
-    }
-
-    .yardage-table {
-        width: 80%;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .swiper-slide {
-        padding: 5px;
-    }
-
-    .yardage-table {
-        width: 100%;
-        font-size: 12px;
-    }
-}
