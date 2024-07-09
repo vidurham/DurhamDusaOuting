@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Golf Outing</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Family Golf Outing</h1>
+    </header>
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>Hole 1</h2>
+                    <p>Description of hole 1.</p>
+                    <img src="dd3.JPG" alt="Family at hole 1">
+                    <img src="hole1.png" alt="Hole 1 layout">
+                    <p>Distance: 350 yards</p>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Hole 2</h2>
+                    <p>Description of hole 2.</p>
+                    <img src="dd4.2.JPG" alt="Family at hole 2">
+                    <img src="hole2.png" alt="Hole 2 layout">
+                    <p>Distance: 400 yards</p>
+                </div>
+                <!-- Repeat similar sections for holes 3-9 -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
