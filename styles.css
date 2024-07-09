@@ -12,6 +12,17 @@ header {
     text-align: center;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content img {
+    max-height: 100px; /* Adjust as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
 main {
     padding: 1em;
 }
